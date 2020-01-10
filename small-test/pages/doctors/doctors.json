@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search": "../../common/search/search",
+    "load-more": "../../common/loadMore/loadMore"
+  }
+}

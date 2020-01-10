@@ -1,0 +1,5 @@
+<view class="hos-search-form">
+    <text class="cuIcon-search"></text>
+    <input class="hos-inp" confirm-type="search" placeholder="搜索医院" bindblur="getList" data-searchHos="{{searchMsg}}" type="text"></input>
+    <button size="mini" class="hos-search">搜索</button>
+</view>

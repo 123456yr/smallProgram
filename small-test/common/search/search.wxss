@@ -1,0 +1,33 @@
+@import '../../colorui/icon.wxss';
+.hos-search-form{
+    overflow: hidden;
+    position: relative;
+  }
+  .hos-search {
+    position: relative;
+    float: right;
+    border-radius: 20px;
+    padding: 10px 10px;
+    background: green;
+    color: #fff;
+    text-align: center;
+    font-size: 12px !important;
+    margin: 10px 10px 0 0; }
+  
+  .hos-inp {
+    float: left;
+    width: 65%;
+    font-size: 14px;
+    color: #999;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10%; }
+  
+  .cuIcon-search {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 30px;
+    height: 30px; }
+  
+  

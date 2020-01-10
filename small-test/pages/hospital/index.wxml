@@ -1,0 +1,20 @@
+<!-- 社区卫生服务 -->
+<view class="index-content">
+  <!-- 搜索开始 -->
+  <search searchMsg="{{searchHos}}" bind:getList="getList"></search>
+  <!-- 搜索结束 -->
+  <!-- 列表开始 -->
+  <view class="hos-list">
+    <view wx:for="{{hosList}}" wx:key="{{item.id}}" class="hos-list-item">
+      <view class="hos-img">
+        <image src="{{item.hospitalPhoto}}" alt="" onerror="javascript:;"></image>
+      </view>
+      <view class="hos-desc">
+        <text class="">{{item.name}}</text>
+        <text class="">{{item.address}}</text>
+      </view>
+      <text>民营</text>
+    </view>
+  </view>
+  <!-- 列表结束 -->
+</view>

@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/hospital/index",
+    "pages/doctors/doctors"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a0a0a0",
+    "selectedColor": "#5941ee",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "selectedIconPath": "/images/tabbar/basics_cur.png",
+        "iconPath": "/images/tabbar/basics.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/images/tabbar/component_cur.png",
+        "iconPath": "/images/tabbar/pic2.png",
+        "pagePath": "pages/hospital/index",
+        "text": "云医院"
+      },
+      {
+        "selectedIconPath": "/images/tabbar/plugin_cur.png",
+        "iconPath": "/images/tabbar/plugin.png",
+        "pagePath": "pages/doctors/doctors",
+        "text": "云医生"
+      },
+      {
+        "selectedIconPath": "/images/tabbar/about_cur.png",
+        "iconPath": "/images/tabbar/about.png",
+        "pagePath": "pages/index/index",
+        "text": "我"
+      }
+    ]
+  }
+  
+}

@@ -1,0 +1,33 @@
+/**index.wxss**/
+.index-content {
+  padding: 10px; }
+
+.action {
+  height: 45px;
+  line-height: 45px; }
+
+.text-orange {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50% 50%;
+  background: orange;
+  line-height: 6px;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+.index-shequ {
+  width: 100%;
+  height: 120px; }
+
+.cu-col {
+  display: inline-block;
+  width: 25%;
+  font-size: 30rpx;
+  text-align: center;
+  margin: 8px 0; }
+
+.cu-img {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 auto 6px; }

@@ -1,0 +1,22 @@
+<!-- 社区卫生服务 -->
+<view class="index-content">
+  <view class="action">
+    <view class="text-orange"></view>
+    <text class="biaoti">{{biaoTi}}</text>
+  </view>
+  <view class="index-shequ">
+    <image style="width: 100%;height: 100%;" src="https://yjt.sddingkao.com/imgFile/dz.png"></image>
+  </view>
+  <view class="action">
+    <view class="text-orange"></view>
+    <text class="biaoti">{{biaoTi}}</text>
+  </view>
+  <view class="cu-list">
+    <navigator class="cu-col" wx:for="{{imgs}}" wx:for-item="item" wx:key="index" url="{{item.url}}">
+        <view class="cu-img">
+          <image style="width: 100%; height: 100%;" src="{{item.img}}"></image>
+        </view>
+        <text>{{item.text}}</text>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+<!-- 社区卫生服务 -->
+<view class="index-content">
+  <view class="doc-container">
+    <view bindtap="getList" data-content="{{item.content}}" wx:for="{{selectType}}" class="{{item.id === activeId ? 'selected' : ''}}" wx:key="{{item.id}}">
+  {{item.content}}</view>
+  </view>
+  <search searchMsg="{{searchMsg}}" bind:getList="getList"></search>
+  <view class="doc-list">
+    <view wx:for="{{doctorList}}" wx:key="{{item.id}}" class="doc-list-item">
+      <view class="doc-img">
+        <image src="{{item.photo}}" mode="" data-index="{{index}}" binderror="imgError" bindload=""></image>
+      </view>
+      <view class="list-right">
+        <text>{{item.usertruename}}</text>
+        <text class="list-address">{{item.normalInstitution}}</text>
+        <view class="list-3">
+          <text>{{item.normalProfessionTitle}}</text>
+          <text>|</text>
+          <text>{{item.normalSection}}</text>
+        </view>
+        <view class="list-4">
+          <view wx:for="{{item.data}}" wx:for-item="typeItem" wx:key="{{typeItem.id}}" class="list-4-item">
+            <view wx:if="{{typeItem.type === '2'}}">
+              <image src="{{imgUrl}}imgFile/dx.png" mode="" binderror="" bindload=""></image>
+              <view>{{typeItem.money}}元/{{typeItem.chattime}}分钟</view>
+            </view>
+            <view wx:if="{{typeItem.type === '3'}}">
+              <image src="{{imgUrl}}imgFile/sj.png" mode="" binderror="" bindload=""></image>
+              <view>{{typeItem.money}}元/{{typeItem.chattime}}分钟</view>
+            </view>
+            <view wx:if="{{typeItem.type === '4'}}">
+              <image src="{{imgUrl}}imgFile/kk.png" mode="" binderror="" bindload=""></image>
+              <view>{{typeItem.money}}元/{{typeItem.chattime}}分钟</view>
+            </view>
+            
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <load-more 
+    id="loadMoreView"
+    hasMore="{{hasMore}}"
+    loadingText="加载更多..."
+    bind:loadMoreFn="loadMoreFn"></load-more>
+</view>

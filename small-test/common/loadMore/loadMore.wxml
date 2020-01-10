@@ -1,0 +1,4 @@
+<view class="loadmore" hidden="{{!showThis}}" bindTap="clickLoadMore">
+    <text class="{{showIcon? 'icon-loading' : ''}}"></text>
+    <text>{{text}}</text>
+</view>
